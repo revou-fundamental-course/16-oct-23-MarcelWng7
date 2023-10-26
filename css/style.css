@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: fixed;
+    background-color: white;
+}
+
+header > img {
+    margin-right: auto;
+    margin-left: 20px;
+    height: 40px;
+}
+
+header > a {
+    margin-right: 20px;
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 1px solid black;
+    align-items: center;
+}
+
+/* Section 1 */
+#bgYourName {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.bg-full-logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+}
+
+.logo-revou > img {
+    height: 180px;
+    border-radius: 50%;
+}
+
+.your-name {
+    background-color: white;
+    position: absolute;
+    padding: 20px;
+    margin-top: 220px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.6);
+}
+
+.input-yourname {
+    margin-top: 10px;
+}
+
+#yourName {
+    font-size: 20px;
+    width: 300px;
+}
+
+#submitYourName {
+    font-size: 15px;
+    padding: 2.5px;
+    width: 100px;
+}
+
+/* Section 2 */
+.none-gap {
+    height: 60px;
+    width: 100%;
+}
+
+.myself {
+    background: url(../assets/background-myself.jpeg);
+    background-size: 100%;
+    height: 68vh;
+    width: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    flex-direction: column;
+}
+
+.hello {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+    margin-top: 80px;
+    margin-left: 100px;
+}
+
+.about-name {
+    color: white;
+}
+
+.about-name > h1 {
+    font-size: 40px;
+}
+
+#name {
+    color: greenyellow;
+}
+
+.type {
+    display: flex;
+    color: white;
+    font-size: 20px;
+    width: 350px;
+}
+
+.changing-text {
+    color: white;
+    font-size: 30px;
+    margin-left: 8px;
+    font-weight: bold;
+}
+
+#guestWelcome {
+    margin-right: 900px;
+    font-weight: bold;
+}
+
+.about-me {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-judul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.about-box {
+    width: 50%;
+    margin-left: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 10px;
+}
+
+.about-box > img {
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 10px;
+    /*box-shadow: 0 0 10px 0 black;*/
+}
+
+#myIsi {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-second {
+    width: 50%;
+    margin-left: auto;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 0 10px 0 black;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.about-second > img {
+    height: 300px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#myIsiSecond {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.message-us {
+    padding: 20px 0 20px 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border: 1px solid black;
+}
+
+.message-box {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.message-left {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.message-left-input > input {
+    width: 300px;
+}
+
+.message-left-input {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-right {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.name-input {
+    width: 100px;
+}
+
+.doubleTick {
+    margin-right: 5px;
+}
+
+.name-field {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.birth-field {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.gender-field {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.message-field {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#messageField {
+    padding: 0 5px 0 5px;
+}
+
+#resultMessage {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    border-radius: 10px;
+    overflow: scroll;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow-x: hidden;
+    padding: 10px;
+}
+
+footer {
+    height: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+    .about-name > h1 {
+        font-size: 15px;
+    }
+
+    .changing-text {
+        font-size: 15px;
+    }
+
+    .type > h1 {
+        font-size: 15px;
+    }
+
+    .about-name {
+        margin-left: -59px;
+        margin-top: -50px;
+    }
+
+    header > a {
+        font-size: 12px;
+        width: 100px;
+    }
+
+    header > img {
+        margin-left: 20px;
+    }
+
+    .myself {
+        height: 19vh;
+    }
+
+    .about-box > img {
+        height: 180px;
+    }
+
+    .about-second > img {
+        height: 180px;
+    }
+
+    .about-second > p {
+        font-size: 10px;
+    }
+
+    #myIsi {
+        font-size: 12px;
+    }
+
+    #myIsiSecond {
+        font-size: 12px;
+    }
+
+    .message-left {
+        width: 100%;
+    }
+
+    .message-box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .message-right {
+        margin-top: 50px;
+        width: 100%;
+    }
+
+    .about-name {
+        width: 600px;
+    }
+
+    .hello {
+        width: 550px;
+    }
+    
+    #name {
+        width: 200px;
+    }
+}

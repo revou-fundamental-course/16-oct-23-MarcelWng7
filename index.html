@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+</head>
+<body>
+    <div id="bgYourName">
+        <div class="bg-full-logo">  
+            <div class="logo-revou">
+                <img src="https://pbs.twimg.com/profile_images/1351409184932171776/B50doHc0_400x400.jpg" alt="RevoU-Logo">
+            </div>  
+            <div class="your-name">     
+                <h1>Hi, may I know your name?</h1>
+                <div class="input-yourname">
+                    <input type="text" name="yourName" id="yourName">
+                    <input type="submit" value="Submit"  id="submitYourName" onclick="submitYourName()">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <img src="https://pbs.twimg.com/profile_images/1351409184932171776/B50doHc0_400x400.jpg" alt="RevoU-Logo">
+            <div id="guestWelcome"></div>
+            <a href="#home" id="homeLink">Home</a>
+            <a href="#about" id="aboutLink">About Us</a>
+            <a href="#messageSite" id="messageLink">Contact Me</a>
+        </header>
+        <section>
+            <div class="none-gap" id="home"></div>
+            <div class="myself">
+                <div class="hello">
+                    <div class="about-name">
+                        <h1>Hello! My name is</h1>
+                        <h1 id="name">MARCEL WANG 🕊️</h1>
+                        <div class="type">
+                            <h1>I am using</h1>
+                            <span class="changing-text"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="about" class="none-gap"></div>
+        <div class="about-me">
+            <div class="about-judul">
+                <u><b><h1 id="about-judul">ABOUT US</h1></b></u>
+            </div>
+            <div class="about-box">
+                <img src="./assets/Marcel.jpeg" alt="myself.jpg">
+                <center><p id="myIsi">
+                    Hey, I am Marcel 👋<br>
+                    I am 19th years old who loves to code since I was 15.<br>
+                </p></center>
+            </div>
+            <div class="about-second">
+                <img src="./assets/randomJSPhoto.jpeg" alt="JSPhoto.jpg">
+                <p>Source: https://hackernoon.com/</p>
+                <center><p id="myIsiSecond">
+                    At past I try each of programming language,<br>
+                    and now I keep on myself learning Web Development using HTML, CSS, and Javascript.
+                </p></center>
+            </div>
+        </div>
+
+        <div class="message-us" id="messageSite">
+            <div class="message-box">
+                <div class="message-left">
+                    <u><b><h1>Message Us</h1></b></u>
+                    <div class="message-left-input">
+                        <div class="name-field">
+                            <label class="name-input" for="name">Name</label>
+                            <label class="doubleTick">:</label>
+                            <input type="text" name="name" id="nameInput">
+                        </div>
+                        <div class="birth-field">
+                            <label class="name-input" for="birth">Birth</label>
+                            <label class="doubleTick">:</label>
+                            <input type="date" name="birth" id="birthInput">
+                        </div>
+                        <div class="gender-field">
+                            <label class="name-input" for="gender">Gender</label>
+                            <label class="doubleTick">:</label>
+                            <input type="radio" value="Male" name="gender" id="boyRadio"> Male
+                            <input type="radio" value="Female" name="gender" id="girlRadio"> Female
+                        </div>
+                        <div class="message-field">
+                            <label class="name-input" for="message">Message</label>
+                            <label class="doubleTick">:</label>
+                            <textarea name="message" id="messageField" cols="30" rows="10"></textarea>
+                        </div>
+                        <input type="submit" value="Submit" onclick="submitMessage()">
+                    </div>
+                </div>
+                <div class="message-right">
+                    <div id="resultMessage"></div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Created by : Marcel Wang</p>
+        </footer>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
