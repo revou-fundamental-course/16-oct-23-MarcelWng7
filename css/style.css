@@ -312,6 +312,10 @@ footer {
         margin-top: -50px;
     }
 
+    header {
+        width: 100%;
+    }
+
     header > a {
         font-size: 12px;
         width: 100px;
